@@ -1,0 +1,16 @@
+:root {
+  --text-white-color: #ffffff;
+  --text-color: #525b60;
+  --text-dark-color: #273238;
+  --text-blue-color: #3facac;
+
+  --background-light-green: #3facac;
+  --background-light-purple: #8495d3;
+  --background-light-blue: #2eb0e7;
+  --background-white: #fefefe;
+  --background-pale-green: #f8fcff;
+  --white: #fff;
+  --background-blue: #4585f0;
+  --bg: #8495d3;
+  --primary-blue: #4585f0;
+}
