@@ -20,7 +20,7 @@ const Header = () => {
         <div className={open ? "hidden" : "flex"}>
           <img src={Logo} alt="women techmaker's logo" />
         </div>
-        <div className="lg:pl-20 pl-6">
+        <div className="lg:pl-20 pl-4">
           <div onClick={handleClick} className="block md:hidden relative">
             {open ? (
               <FiX className="text-2xl bg-bgBlue text-textLight p-[5px] rounded z-[5000] absolute top-[20px] right-[16px] transition-all" />
