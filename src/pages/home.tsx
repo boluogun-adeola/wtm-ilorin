@@ -5,6 +5,7 @@ import Image3 from "../Assets/image3.png";
 import Impact1 from "../Assets/impact1.png";
 import Impact2 from "../Assets/impact2.png";
 import Impact3 from "../Assets/impact3.png";
+import Partner from "../Assets/partners.png";
 
 const Home = () => {
   return (
@@ -91,6 +92,41 @@ const Home = () => {
           <img src={Image3} alt="" />
         </div>
       </section>
+      <section className="here-image bg-cover h-[400px] mt-8 flex justify-center items-center">
+        <h1 className="text-textLight capitalize text-3xl md:text-6xl leading-[64px] ">
+          We are here for you
+        </h1>
+      </section>
+      <section className="flex justify-center flex-col items-center text-textDark">
+        <button className="text-base text-textLight bg-bgBlue py-2 md:py-2.5 px-8 rounded-md mt-6 md:mt-8">
+          Contact Us
+        </button>
+        <p className="pt-10 text-base md:text-xl pb-4 px-8">
+          We can help. Our team of experts are here to answer your questions
+        </p>
+        <div className="flex justify-center items-center w-full gap-8">
+          <hr className="h-[3px] rounded-lg border-none w-[40%] bg-bgGray" />
+          <hr className="h-[3px] rounded-lg border-none w-[40%] bg-bgGray" />
+        </div>
+      </section>
+      <section className="mt-8 px-4 lg:px-36 partner-image bg-cover flex flex-col md:flex-row justify-between bg-no-repeat w-[100%] md:h-[450px] lg:h-[776px] text-textLight items-center">
+        <div className="pt-4 md:pt-0">
+          <p className="text-lg md:text-4xl md:w-[85%] lg:w-[70%] pb-4">
+            Our partners are building a world where all women can thrive
+          </p>
+          <p className="md:text-xl text-base">
+            {" "}
+            Where everyone sees the opportunity to thrive.
+          </p>
+          <button className="text-base text-textDark bg-bgLight py-2 md:py-2.5 px-8 rounded-md mt-6 md:mt-8 mb-6 md:mb-0">
+            Become our partner
+          </button>
+        </div>
+        <div className="self-center">
+          <img src={Partner} alt="" />
+        </div>
+      </section>
+      <section className="mt-8"></section>
     </main>
   );
 };

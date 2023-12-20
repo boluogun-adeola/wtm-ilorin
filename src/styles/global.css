@@ -23,3 +23,18 @@ body {
   left: -100%;
   transition: 0.5s all;
 }
+
+.here-image {
+  background-image: url("/public/image/here-desktop.png");
+}
+.partner-image {
+  background-image: url("/public/image/lg-background.png");
+}
+@media screen and (max-width: 500px) {
+  .here-image {
+    background-image: url("/public/image/here-mobile.png");
+  }
+  .partner-image {
+    background-image: url("/public/image/sm-background.png");
+  }
+}
