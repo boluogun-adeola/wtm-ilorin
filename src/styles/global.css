@@ -9,6 +9,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   @apply text-[17px] lg:text-[15px];
