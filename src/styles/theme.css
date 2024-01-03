@@ -6,10 +6,11 @@
 
   --text-blue-color: #4585f0;
   --background-gray: #8495d33d;
-  --background-green: #00d95f;
+  --background-green: #2fccb6;
   --background-purple: rgba(51, 127, 255, 0.27);
   --background-green-pigment: #f3fdf7;
   --background-cerulean: #e6f8ff;
+  --background-vivid-cerulean: #2eb0e7;
 
   --background-light-green: #3facac;
   --background-light-purple: #8495d3;
@@ -20,4 +21,5 @@
   --background-blue: #4585f0;
   --bg: #8495d3;
   --primary-blue: #4585f0;
+  --primary-black: #000000;
 }
