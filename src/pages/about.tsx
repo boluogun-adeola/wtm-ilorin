@@ -5,8 +5,36 @@ import Image6 from "../Assets/image6.png";
 import Image7 from "../Assets/image7.png";
 import Image8 from "../Assets/image8.png";
 import Image9 from "../Assets/image9.png";
+import Adeola from "../Assets/Adeola.png";
+import Barakat from "../Assets/Barakat.png";
+import Doyinsola from "../Assets/Doyinsola.png";
+import Victoria from "../Assets/Victoria.png";
 
 const About = () => {
+  //created the team array so that it is easy to add and remove team members as needed
+  const Team = [
+    {
+      name: "Adeola Olaleye",
+      image: Adeola,
+      title: "WTMIlorin Lead",
+    },
+    {
+      name: "Owolabi Barakat",
+      image: Barakat,
+      title: "Graphic Designer",
+    },
+    {
+      name: "Oyewola Doyinsola",
+      image: Doyinsola,
+      title: "Progam Manager",
+    },
+    {
+      name: "Victoria Kudabo",
+      image: Victoria,
+      title: "Content Strageist",
+    },
+  ];
+
   return (
     <main>
       <section className="flex bg-bgPurple px-4 lg:px-36 py-16 justify-between items-center w-full">
@@ -127,6 +155,24 @@ const About = () => {
       <section>
         <div className="bg-bgGreen text-textLight py-8">
           <h2 className="text-center text-4xl">Team Members</h2>
+        </div>
+        <div className="px-4 lg:px-36 flex justify-evenly flex-wrap gap-8 py-[100px]">
+          {Team.map((team) => {
+            return (
+              <div
+                className="text-center text-sm pb-[8px] rounded-tl-3xl rounded-br-3xl border-dashed border-8 border-blue-400 "
+                key="team.image"
+              >
+                <img
+                  src={team.image}
+                  alt={team.name}
+                  className="w-[200px] h-[200px]"
+                />
+                <p>{team.name}</p>
+                <p className="text-xs">{team.title}</p>
+              </div>
+            );
+          })}
         </div>
       </section>
     </main>
